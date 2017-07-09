@@ -43,3 +43,12 @@ Basically what we want to do is to retrieve the holidays from the API, we are go
 - Generate a Month component for each month (do not expect the remaining days to cover the entire month).
 - Within the Month component, calculate the amount of weeks needed to cover the timespan for the given month. Generate a Week component for each, passdown the week information down the tree.
 - Within each Week component, calculate the amount of days in that week. If the amount of days is less than 7, that would mean that the rendering process should have ended, render a day with invalid set to true in order to render invalid days (the gray ones), because the week has 7 days no matter what, let the root component know that this has happened, otherwise, continue the rendering process. For each day, generate a Day component, pass the day type for each.
+
+___
+Copyright 2017 Manuel Ro
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
