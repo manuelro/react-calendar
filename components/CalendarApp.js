@@ -94,7 +94,7 @@ function updateState(key, value){
   plus the years in the range
 */
 function getYears(date){
-  return [1, 2]
+  return [2017, 2018] // This should return a years array with Moment.js year structure
 }
 
 export default class CalendarApp extends Component {
@@ -111,7 +111,7 @@ export default class CalendarApp extends Component {
 
   render(){
     const years = getYears(this.state.date) || []
-    const yearItems = years.map((year, index) => <Year key={index} year={year} {...this.state}/> )
+    const yearItems = years.map((year, index) => <Year key={index} year={year} {...this.state}/>)
 
     return (
       <div>
