@@ -10,6 +10,7 @@ The following aspects should be covered in order to make the component a high-qu
 - [ ] Consider adding support for server rendering technologies (NodeJS, React, Angular)
 - [ ] Consider using any front-end storage technology in order to avoid further requests to the server
 - [x] Describe the algorithm logic
+- [ ] Consider translating the UX/UI to use a UI framework, such as Material Design (for React)
 - [ ] Organize the required steps in a Scrum fashion (with sprints)
 - [ ] Unit test every unit of logic
 - [ ] Perform integration tests for the UI
