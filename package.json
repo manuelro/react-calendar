@@ -4,9 +4,19 @@
   "description": "Calendar App",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "formsy-react": "^0.19.5",
+    "moment": "^2.18.1",
+    "moment-range": "^3.0.3",
+    "next": "^3.0.1-beta.8",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
 }
