@@ -34,11 +34,15 @@ For this component we are going to use the following stack:
 There are missing parts in the UI, for instance, the toolbar that will contain the input elements that will update the view. This also applies to the years that will behave as tabs to show the calendar for certain years depending on the selected time span.
 (this will be inserted here).
 
+![Everest](https://raw.githubusercontent.com/manuelro/react-calendar/master/assets/extended-wireframe.png)
+
 ## Composition using a components based architecture
 React is a component based framework, therefore it makes sense to split our UI in smaller components and propagate the state down the tree up to the components that need that state to work, in case you need a stateful component, do so by exporting a component that will compute its own state based on passed properties from the root component.
 
+![Everest](https://raw.githubusercontent.com/manuelro/react-calendar/master/assets/components-diagram.jpg)
+
 ## The foundation code
-Missing...
+Code is distributed in components with a minimum responsibility, following the Single Responsibility Principle; as well as the Interface Segregation Principle.
 
 ## The algorithm logic
 Basically what we want to do is to retrieve the holidays from the API, we are going to start with a predefined year (2017) and we are going to let the user change that year, as well as the country code and the starting date. The algorithmic steps are as follows:
