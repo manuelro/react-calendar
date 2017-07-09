@@ -3,28 +3,28 @@ The calendar app includes the creation and development of a calendar component u
 
 ## Roadmap
 The following aspects should be covered in order to make the component a high-quality one:
-- [x] Define the technology stack
-- [x] Design the missing parts of the UI
-- [x] Split the component in smaller components
-- [ ] Generate the starting code for the component architecture
-- [ ] Consider adding support for server rendering technologies (NodeJS, React, Angular)
-- [ ] Consider using any front-end storage technology in order to avoid further requests to the server
-- [x] Describe the algorithm logic
-- [ ] Consider translating the UX/UI to use a UI framework, such as Material Design (for React)
-- [ ] Organize the required steps in a Scrum fashion (with sprints)
-- [ ] Unit test every unit of logic
-- [ ] Perform integration tests for the UI
-- [ ] Perform acceptance tests
-- [ ] Consider adding support for a CI tool (Travis, Circle)
-- [ ] Consider adding support for a code coverage tool (Istanbul with NYC)
-- [ ] Publish
+- [x] Define the technology stack.
+- [x] Design the missing parts of the UI.
+- [x] Split the component in smaller components.
+- [ ] Generate the starting code for the component architecture.
+- [ ] Consider adding support for server rendering technologies (NodeJS, React, Angular).
+- [ ] Consider using any front-end storage technology in order to avoid further requests to the server.
+- [x] Describe the algorithm logic.
+- [ ] Consider translating the UX/UI to use a UI framework, such as Material Design (for React).
+- [ ] Organize the required steps in a Scrum fashion (with sprints).
+- [ ] Unit test every unit of logic.
+- [ ] Perform integration tests for the UI.
+- [ ] Perform acceptance tests.
+- [ ] Consider adding support for a CI tool (Travis, Circle).
+- [ ] Consider adding support for a code coverage tool (Istanbul with NYC).
+- [ ] Publish.
 
 ## Technology Stack
 For this component we are going to use the following stack:
-- React, since this is a component based framework for highly scalable UI apps
-- NodeJS as the backend server technology, this will allow us to implement server rendering
-- Isomorphic Fetch, a polyfill for NodeJS fetch function that runs of the server and client
-- LocalStorage, as a front-end persistent storage for data retrieved from the API
+- React, since this is a component based framework for highly scalable UI apps.
+- NodeJS as the backend server technology, this will allow us to implement server rendering.
+- Isomorphic Fetch, a polyfill for NodeJS fetch function that runs of the server and client.
+- LocalStorage, as a front-end persistent storage for data retrieved from the API.
 
 ## The missing parts of the UI
 There are missing parts in the UI, for instance, the toolbar that will contain the input elements that will update the view. This also applies to the years that will behave as tabs to show the calendar for certain years depending on the selected time span.
@@ -42,7 +42,7 @@ Basically what we want to do is to retrieve the holidays from the API, we are go
 - Pass that information down the components tree, starting by the Year component.
 - In the Year component, calculate how many months are needed to cover the given timespan.
 - Generate a Month component for each month (do not expect the remaining days to cover the entire month).
-- Within the Month component, calculate the amount of weeks needed to cover the timespan for the given month. Generate a Week component for each, passdown the week information down the tree.
+- Within the Month component, calculate the amount of weeks needed to cover the timespan for the given month. Generate a Week component for each, pass the week information down the tree.
 - Within each Week component, calculate the amount of days in that week. If the amount of days is less than 7, that would mean that the rendering process should have ended, render a day with invalid set to true in order to render invalid days (the gray ones), because the week has 7 days no matter what, let the root component know that this has happened, otherwise, continue the rendering process. For each day, generate a Day component, pass the day type for each.
 
 ___

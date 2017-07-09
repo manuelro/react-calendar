@@ -17,6 +17,7 @@
     "moment-range": "^3.0.3",
     "next": "^3.0.1-beta.8",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "store": "^2.0.12"
   }
 }
